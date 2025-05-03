@@ -29,7 +29,7 @@ services:
       dockerfile: Dockerfile
     container_name: chat-frontend
     ports:
-      - "3001:3000"
+      - "3001:3000" # Don't conflict with music-award frontend (3000)
     depends_on:
       - backend
     volumes:
